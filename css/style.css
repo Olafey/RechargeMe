@@ -1,0 +1,9 @@
+:root {
+  --bg-color: white;
+  --sec-bg-color: grey;
+  --button: rgb(74, 74, 255);
+}
+
+* {
+  background-color: aliceblue;
+}
