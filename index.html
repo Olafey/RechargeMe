@@ -7,9 +7,88 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="main" id="main">
-      <input type="text" name="" id="" />
-    </div>
+    <div class="wrapper">
+      <div class="header">
+        <p class="hero-header">Recharge Card</p>
+      </div>
+    
+    <div class="contInp">
+      <div class="leftsection">
+        <div class="network">
+          <label for="selectNetwork" >Select Network</label>
+          <select name="nets" id="selectNetwork">
+            <option value=""></option>
+            <option value="MTN">MTN</option>
+            <option value="AIRTEL">AIRTEL</option>
+            <option value="GLO">GLO</option>
+            <option value="ETISALAT">ETISALAT</option>
+            
+          </select>
+        </div>
+        
+      
+        <div class="amount">
+         <div class="inpt">
+          <label for="input-amount">Amount ₦</label>
+          <input type="number" placeholder=" Input the airtime amount..." id="input-amount">
+         </div>
+         </div>
+      
+         <div class="generate" id ="pinCode">
+         
+            
+            
+            
+          <!-- <input type="number" placeholder=" Generating..." disabled id="generatedPin"> -->
+        </div>
+      
+      
+        <div class="btngen">
+          <button class="generateBtn" id="generateButn">Generate</button>
+          <button class="generateBtn" onclick="save()">Save</button>
+      
+        </div>
+    
+         </div>
+    
+           <!-- RIGHT SECTION OF THE INPUT  -->
+         <div class="rightsection">
+    
+          <div class="recharged">
+            <label for="rechargePin">Recharge</label>
+          <div class="boxCode" id="rechargePin"> 
+    
+          </div>
+          </div>
+        
+          <div class="btngen">  
+            <button class="generateBtn" id="recharge">Recharge</button>
+          </div>
+         </div>
+         </div>
+         
+    
+         <!-- TABLE SECTIONN....  -->
+          <table border="1rem">
+          <thead>
+    <tr>
+      <th>S/N</th>
+      <th>Network</th>
+      <th>Amount</th>
+      <th>Code</th>
+      <th>Recharge Pin</th>
+      <th>Status</th>
+    </tr>
+          </thead>
+          
+          <tbody id="users-list">
+          
+           
+          </tbody>
+    
+        </table>
+      </div>
+       </div>
     <script src="./js/script.js"></script>
   </body>
 </html>
